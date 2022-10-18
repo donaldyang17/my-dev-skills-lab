@@ -11,8 +11,12 @@ function getAll() {
 function create(skill) {
   skills.push(skill);
 }
+function deleteOne(skill) {
+  skills.splice(skill, 1);
+}
 
 module.exports = {
   getAll,
   create,
+  deleteOne,
 };
