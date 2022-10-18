@@ -4,10 +4,15 @@ const skills = [
   { skill: "Eventually get things done" },
 ];
 
-module.exports = {
-  getAll,
-};
-
 function getAll() {
   return skills;
 }
+
+function create(skill) {
+  skills.push(skill);
+}
+
+module.exports = {
+  getAll,
+  create,
+};
